@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "homepage": "https://askbobo.github.io/app",
+  "homepage": "https://app.askbobo.ai",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo 'app.askbobo.ai' > build/CNAME",
     "deploy": "gh-pages -d build"
   },
   "browserslist": {
