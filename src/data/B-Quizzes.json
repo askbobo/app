@@ -1,0 +1,200 @@
+[
+  {
+    "id": "q14",
+    "question": "In which country was there a Bukharian First Lady (in 2003-2016)?",
+    "options": [
+      "Iceland",
+      "The Netherlands",
+      "Finland",
+      "Greenland"
+    ],
+    "correct": "Greenland"
+  },
+  {
+    "id": "q9",
+    "question": "What country has the largest current population of Bukharian Jews?",
+    "options": [
+      "United States of America",
+      "Canada",
+      "Kazachstan",
+      "Israel"
+    ],
+    "correct": "United States of America"
+  },
+  {
+    "id": "q2",
+    "question": "What year was the first Hebrew edition of \"Hebrew of the Bukharian Jews\" published in Israel?",
+    "options": [
+      1991,
+      1985,
+      2010,
+      1971
+    ],
+    "correct": 1971
+  },
+  {
+    "id": "q16",
+    "question": "Are Bukharian Jews considered Sephardic, Mizrahi or Ashkenazi?",
+    "options": [
+      "Conservative",
+      "Sephardic",
+      "Mizrahi",
+      "Ashkenazi"
+    ],
+    "correct": "Sephardic"
+  },
+  {
+    "id": "q6",
+    "question": "What is the name of a rice based dish that is colored green often by cilantro, dill, and/or parsley?",
+    "options": [
+      "Borsh",
+      "Halti Svo",
+      "Plof",
+      "Bahsh"
+    ],
+    "correct": "Plof"
+  },
+  {
+    "id": "q5",
+    "question": "When did Hizkiah haCohen Rabin become the Chief Rabbi of Bukhara?",
+    "options": [
+      1889,
+      1890,
+      1896,
+      1880
+    ],
+    "correct": 1880
+  },
+  {
+    "id": "q17",
+    "question": "How do you say bread in Bukharian?",
+    "options": [
+      "Zhon",
+      "Pon",
+      "Non",
+      "Bon"
+    ],
+    "correct": "Non"
+  },
+  {
+    "id": "q10",
+    "question": "What city is best known for having been located on the Silk Road?",
+    "options": [
+      "Samarkand",
+      "Bukhara",
+      "Moscow",
+      "Tashkent"
+    ],
+    "correct": "Samarkand"
+  },
+  {
+    "id": "q18",
+    "question": "Which country does NOT have a Bukharian Community today?",
+    "options": [
+      "Austria",
+      "Moldova",
+      "Australia",
+      "Albania"
+    ],
+    "correct": "Austria"
+  },
+  {
+    "id": "q7",
+    "question": "What traditionally triangle shaped pastry is filled with pumpkin?",
+    "options": [
+      "Pelmeny",
+      "Bichak",
+      "Gorshgigeh",
+      "Samsa"
+    ],
+    "correct": "Bichak"
+  },
+  {
+    "id": "q8",
+    "question": "What traditional dish is cooked in a bag is typically served after Shabbat service on Saturday?",
+    "options": [
+      "Bahsh",
+      "Halti Svo",
+      "Plof",
+      "Babaganush"
+    ],
+    "correct": "Plof"
+  },
+  {
+    "id": "q1",
+    "question": "What year was \"Musa Namah\" written?",
+    "options": [
+      1326,
+      1436,
+      2018,
+      1536
+    ],
+    "correct": 1326
+  },
+  {
+    "id": "q12",
+    "question": "The burning of this herb is said to protect from the evil eye;",
+    "options": [
+      "Olefiyosh",
+      "Espondut",
+      "Esranut",
+      "Ookropp"
+    ],
+    "correct": "Olefiyosh"
+  },
+  {
+    "id": "q11",
+    "question": "Which city is the capital of Uzbekistan?",
+    "options": [
+      "Navoi",
+      "Samarkand",
+      "Kiev",
+      "Tashkent"
+    ],
+    "correct": "Samarkand"
+  },
+  {
+    "id": "q3",
+    "question": "What year did the Manghit Dynasty come to power in Bukhara in the beginning of a massive conversions to Islam?",
+    "options": [
+      1788,
+      1753,
+      1891,
+      1791
+    ],
+    "correct": 1753
+  },
+  {
+    "id": "q4",
+    "question": "What year was the first Bukharian-Jewish newspaper \"Rahamim published in Kokand, Uzbekistan?",
+    "options": [
+      1925,
+      1910,
+      1923,
+      1914
+    ],
+    "correct": 1923
+  },
+  {
+    "id": "q15",
+    "question": "What is one language that had a significant impact on the Bukharian language?",
+    "options": [
+      "Azerbaijani",
+      "Farsi",
+      "Ukranian",
+      "Russian"
+    ],
+    "correct": "Russian"
+  },
+  {
+    "id": "q13",
+    "question": "How do you say grandma in Bukharian?",
+    "options": [
+      "Bobo",
+      "Baba",
+      "Bebe",
+      "Bebo"
+    ],
+    "correct": "Bebo"
+  }
+]
