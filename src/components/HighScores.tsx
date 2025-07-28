@@ -16,7 +16,7 @@ const HighScores = () => {
 
   return (
     <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded shadow-md w-full max-w-xs">
-      <h2 className="text-xl font-bold mb-2 text-center">🏆 High Scores</h2>
+      <h2 className="text-xl font-bold mb-2 text-center">🏆 Quiz High Scores</h2>
       <ul className="space-y-1">
         {scores.map((entry, i) => (
           <li key={i} className="flex justify-between">
