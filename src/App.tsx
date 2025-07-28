@@ -4,6 +4,8 @@ import DarkModeToggle from './components/DarkModeToggle';
 import Quiz from './components/Quiz';
 import HighScores from './components/HighScores';
 import LastName from './components/LastName';
+import Flashcards from './components/Flashcards';  
+
 
 function App() {
     return (
@@ -16,6 +18,8 @@ function App() {
                         <Link to="/last-name" className="font-bold hover:underline">Last Names</Link>
                         <Link to="/" className="font-bold hover:underline">Dictionary</Link>
                         <Link to="/quiz" className="font-bold hover:underline">Quiz</Link>
+                        <Link to="/flashcards" className="font-bold hover:underline">Flashcards</Link>
+
                     </div>
                     <DarkModeToggle/>
                 </nav>
@@ -28,6 +32,8 @@ function App() {
                                 <Route path="/last-name" element={<LastName/>}/>
                                 <Route path="/" element={<Dictionary/>}/>
                                 <Route path="/quiz" element={<Quiz/>}/>
+                                <Route path="/flashcards" element={<Flashcards />} />
+
                             </Routes>
                         </div>
                         <div className="w-full lg:w-80">
