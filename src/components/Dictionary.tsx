@@ -2,7 +2,7 @@ import { useState } from 'react';
 import data from '../data/B-Dic.json';
 import { DictionaryEntry } from '../types';
 import WordCard from './WordCard';
-import Flashcard from './Flashcards';
+
 
 
 
@@ -23,7 +23,7 @@ const Dictionary = () => {
 
   return (
   <div className="max-w-4xl mx-auto p-4">
-    <Flashcard />  {/* ✅ New flashcard goes here */}
+    
 
     <input
       type="text"
