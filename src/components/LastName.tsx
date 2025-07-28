@@ -22,7 +22,7 @@ export default function LastName() {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-2xl font-bold">Last Name Meaning Finder</h1>
+      <h1 className="text-2xl font-bold">Last Name Meaning</h1>
 
       <div className="flex flex-wrap gap-2">
         {alphabet.map((letter) => (
