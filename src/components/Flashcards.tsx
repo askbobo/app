@@ -8,20 +8,23 @@ const Flashcard = () => {
   const [known, setKnown] = useState<Set<number>>(new Set());
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [score, setScore] = useState(0);
+  const [hasStarted, setHasStarted] = useState(false);
 
-  // Load name and known progress from localStorage
   useEffect(() => {
     const savedName = localStorage.getItem('flashcard-name');
     const savedKnown = localStorage.getItem('flashcard-known');
+    const savedScore = localStorage.getItem('flashcard-score');
     if (savedName) setName(savedName);
     if (savedKnown) setKnown(new Set(JSON.parse(savedKnown)));
+    if (savedScore) setScore(Number(savedScore));
   }, []);
 
-  // Save known progress and name
   useEffect(() => {
     localStorage.setItem('flashcard-known', JSON.stringify(Array.from(known)));
+    localStorage.setItem('flashcard-score', score.toString());
     if (name) localStorage.setItem('flashcard-name', name);
-  }, [known, name]);
+  }, [known, name, score]);
 
   const getNextIndex = (): number | null => {
     const unknownIndices = entries
@@ -43,6 +46,14 @@ const Flashcard = () => {
     const updated = new Set(known);
     updated.add(currentIndex);
     setKnown(updated);
+    const newScore = score + 1;
+    setScore(newScore);
+
+    const existing = JSON.parse(localStorage.getItem('flashcard-scores') || '[]');
+    const filtered = existing.filter((entry: any) => entry.name !== name);
+    filtered.push({ name, score: newScore });
+    localStorage.setItem('flashcard-scores', JSON.stringify(filtered));
+
     start();
   };
 
@@ -52,19 +63,20 @@ const Flashcard = () => {
 
   const resetProgress = () => {
     setKnown(new Set());
+    setScore(0);
+    setName('');
     setCurrentIndex(null);
+    setHasStarted(false);
     localStorage.removeItem('flashcard-known');
+    localStorage.removeItem('flashcard-name');
+    localStorage.removeItem('flashcard-score');
   };
-
-  useEffect(() => {
-    if (name) start();
-  }, [name]);
 
   const entry = currentIndex !== null ? entries[currentIndex] : null;
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] text-center px-4">
-      {!name ? (
+      {!hasStarted ? (
         <div className="space-y-4">
           <h2 className="text-2xl font-bold">What's your name?</h2>
           <input
@@ -74,6 +86,17 @@ const Flashcard = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
+          <button
+            onClick={() => {
+              localStorage.setItem('flashcard-name', name);
+              setHasStarted(true);
+              start();
+            }}
+            disabled={!name.trim()}
+            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50"
+          >
+            Start Flashcards
+          </button>
         </div>
       ) : known.size >= entries.length ? (
         <div className="space-y-4">

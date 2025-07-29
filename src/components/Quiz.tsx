@@ -57,10 +57,12 @@ const Quiz = () => {
   };
 
   const saveScore = () => {
-    const existing = JSON.parse(localStorage.getItem('quiz-scores') || '[]');
-    const updated = [...existing, { name, score }];
-    localStorage.setItem('quiz-scores', JSON.stringify(updated));
-  };
+  const existing = JSON.parse(localStorage.getItem('quiz-scores') || '[]');
+  const filtered = existing.filter((entry: any) => entry.name !== name);
+  filtered.push({ name, score });
+  localStorage.setItem('quiz-scores', JSON.stringify(filtered));
+};
+
 
   const reset = () => {
     setScore(0);
