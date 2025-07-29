@@ -7,7 +7,7 @@ import LastName from './components/LastName';
 import Flashcards from './components/Flashcards';
 import About from "./components/About";
 import FlashHighScores from "./components/FlashHighScores";
-
+import BigHeader from "./components/BigHeader";
 
 function App() {
     return (
@@ -27,10 +27,7 @@ function App() {
 
                 {/* Page Content */}
                 <div className="p-4">
-                    <div className="banner">
-                        <h1 className="text-5xl font-bold">AskBobo</h1>
-                        <h1 className="text-1xl font-bold text-blue-400">The one and only Bukharian online dictionary.</h1>
-                    </div>
+                    <BigHeader/>
                     <br/>
                     <div className="flex flex-col lg:flex-row gap-4">
                         <div className="flex-grow">
@@ -40,7 +37,6 @@ function App() {
                                 <Route path="/quiz" element={<Quiz/>}/>
                                 <Route path="/flashcards" element={<Flashcards/>}/>
                                 <Route path="/about" element={<About/>}/>
-
                             </Routes>
                         </div>
                         <div className="w-full lg:w-80">
