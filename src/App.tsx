@@ -16,8 +16,8 @@ function App() {
                 {/* Navigation Bar */}
                 <nav className="flex justify-between items-center px-4 py-3 bg-white dark:bg-gray-800 shadow">
                     <div className="flex gap-4">
-                        <Link to="/last-name" className="font-bold hover:underline">Last Names</Link>
-                        <Link to="/" className="font-bold hover:underline">Dictionary</Link>
+                        <Link to="/" className="font-bold hover:underline">Last Names</Link>
+                        <Link to="/dictionary" className="font-bold hover:underline">Dictionary</Link>
                         <Link to="/quiz" className="font-bold hover:underline">Quiz</Link>
                         <Link to="/flashcards" className="font-bold hover:underline">Flashcards</Link>
                         <Link to="/about" className="font-bold hover:underline">About</Link>
@@ -35,8 +35,8 @@ function App() {
                     <div className="flex flex-col lg:flex-row gap-4">
                         <div className="flex-grow">
                             <Routes>
-                                <Route path="/last-name" element={<LastName/>}/>
-                                <Route path="/" element={<Dictionary/>}/>
+                                <Route path="/" element={<LastName/>}/>
+                                <Route path="/dictionary" element={<Dictionary/>}/>
                                 <Route path="/quiz" element={<Quiz/>}/>
                                 <Route path="/flashcards" element={<Flashcards/>}/>
                                 <Route path="/about" element={<About/>}/>
