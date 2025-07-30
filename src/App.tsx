@@ -42,7 +42,7 @@ function App() {
                 {/* Mobile Menu */}
                 {isMenuOpen && (
                     <div className="lg:hidden bg-white dark:bg-gray-800 px-4 py-2 shadow absolute top-[4.5rem] left-0 right-0 z-10">
-                        <div className="flex flex-col gap-2 pt-1">
+                        <div className="flex flex-col gap-2 pt-1 text-xl">
                             <Link to="/" className="font-bold hover:underline" onClick={toggleMenu}>Last Names</Link>
                             <Link to="/dictionary" className="font-bold hover:underline" onClick={toggleMenu}>Dictionary</Link>
                             <Link to="/quiz" className="font-bold hover:underline" onClick={toggleMenu}>Quiz</Link>
