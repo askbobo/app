@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {HashRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Dictionary from './components/Dictionary';
 import DarkModeToggle from './components/DarkModeToggle';
 import Quiz from './components/Quiz';
@@ -21,7 +21,8 @@ function App() {
         <Router>
             <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
                 {/* Navigation Bar */}
-                <nav className="flex justify-between items-center px-4 py-3 bg-white dark:bg-gray-800 shadow relative z-20">
+                <nav
+                    className="flex justify-between items-center px-4 py-3 bg-white dark:bg-gray-800 shadow relative z-20">
                     <div className="flex items-center">
                         {/*<button className="lg:hidden w-12 h-12" onClick={toggleMenu}>*/}
                         {/*    {isMenuOpen ? (*/}
