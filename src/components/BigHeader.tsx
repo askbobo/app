@@ -3,9 +3,9 @@ import logo from '../assets/logos/icon-logo.png'; // Ensure this path is correct
 
 function BigHeader() {
     return (
-        <div className="flex items-center w-full">
+        <div className="hidden lg:flex items-center w-full">
             <div className="flex-shrink-0 w-36">
-                <img src={logo} alt="Logo" className="w-36 h-36 object-contain"/>
+                <img src={logo} alt="Logo" className="w-36 h-36 object-contain" />
             </div>
             <div className="flex-grow pl-4">
                 <h1 className="text-5xl font-bold">AskBobo</h1>
