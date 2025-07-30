@@ -2,12 +2,11 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Dictionary from './components/Dictionary';
 import DarkModeToggle from './components/DarkModeToggle';
 import Quiz from './components/Quiz';
-import HighScores from './components/HighScores';
 import LastName from './components/LastName';
 import Flashcards from './components/Flashcards';
-import About from "./components/About";
-import FlashHighScores from "./components/FlashHighScores";
-import BigHeader from "./components/BigHeader";
+import About from './components/About';
+import BigHeader from './components/BigHeader';
+import TopList from './components/TopList';
 
 function App() {
     return (
@@ -39,9 +38,11 @@ function App() {
                                 <Route path="/about" element={<About/>}/>
                             </Routes>
                         </div>
-                        <div className="w-full lg:w-80">
-                            <HighScores/>
-                            <FlashHighScores/>
+                        <div className="w-full lg:w-80 flex justify-center lg:justify-start">
+                            <div>
+                                <TopList storageKey="quiz-scores" title="🏆 Quiz High Scores"/>
+                                <TopList storageKey="flashcard-scores" title="🧠 Flashcard High Scores"/>
+                            </div>
                         </div>
                     </div>
                 </div>
