@@ -8,7 +8,7 @@ import Flashcards from './components/Flashcards';
 import About from './components/About';
 import BigHeader from './components/BigHeader';
 import TopList from './components/TopList';
-import logo from './assets/logos/icon-logo.png'; // Adjust path to match BigHeader's import
+import logo from './assets/logos/icon-logo.png';
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,6 +20,7 @@ function App() {
     return (
         <Router>
             <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+
                 {/* Navigation Bar */}
                 <nav
                     className="flex justify-between items-center px-4 py-3 bg-white dark:bg-gray-800 shadow relative z-20">

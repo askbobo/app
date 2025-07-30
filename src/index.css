@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html, body {
+    background-color: white;  /* Light mode fallback */
+    transition: background-color 0.3s ease;
+}
+
+/* If you're toggling the "dark" class */
+html.dark, body.dark {
+    background-color: #111827; /* Tailwind's gray-900 */
+}
